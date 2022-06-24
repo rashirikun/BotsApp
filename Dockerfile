@@ -1,16 +1,16 @@
-FROM princemendiratta/botsapp:latest
+FROM julin/botsapp:latest
 
 WORKDIR /
 
-COPY . /BotsApp
+COPY . /rashirikun
 
-WORKDIR /BotsApp
+WORKDIR /julin
 
 RUN npm install
 
 RUN git init --initial-branch=main
 
-RUN git remote add origin https://github.com/BotsAppOfficial/BotsApp.git
+RUN git remote add origin https://github.com/rashirikun.git
 
 RUN git fetch origin main
 
